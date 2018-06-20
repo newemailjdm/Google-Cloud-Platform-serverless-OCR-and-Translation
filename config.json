@@ -1,0 +1,8 @@
+{
+  "RESULT_TOPIC": "trans-memo",
+  "RESULT_BUCKET": "memo-text",
+  "TRANSLATE_TOPIC": "memos",
+  "TRANSLATE": true,
+  "TO_LANG": ["en", "ko"]
+}
+
