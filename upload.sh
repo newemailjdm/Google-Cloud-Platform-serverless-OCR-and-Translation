@@ -3,10 +3,10 @@
 clear;
 
 log_file="`pwd`/upload.log";
-for file in /home/a34478/Pictures/Memoir/*; do
+for file in /home/user/Pictures/*; do
     now=$(date)
     echo "$(basename "$file")";
-    gsutil cp /home/a34478/Pictures/Memoir/$(basename "$file") gs://memopics;
+    gsutil cp /home/user/Pictures/$(basename "$file") gs://memopics;
     echo "$(basename "$file") uploaded at $now "  >> $log_file;
     sleep 1;
 done
